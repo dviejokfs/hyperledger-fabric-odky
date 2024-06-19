@@ -1,0 +1,119 @@
+## Bun Runtime for JavaScript
+
+### Introduction
+Bun is a modern JavaScript runtime and package manager that aims to be a fast all-in-one solution for building, testing, running, and deploying JavaScript applications. It is built with performance in mind, leveraging the power of native code and optimized compilers to speed up various aspects of development.
+
+### Key Concepts
+
+#### 1. **Runtime Features**
+   - **Blazing Fast Performance:** Bun is designed to be faster than other JavaScript runtimes by utilizing native code and efficient memory handling.
+   - **Built-in Package Manager:** Bun has an integrated package manager that eases the management of dependencies.
+   - **Single Binary:** Bun is distributed as a single binary, simplifying installation and setup.
+
+#### 2. **Bundling**
+   Bun can bundle JavaScript and TypeScript code, along with dependencies, into a single file. This makes deploying applications simpler and faster.
+
+#### 3. **Transpilation**
+   Bun supports transpiling TypeScript to JavaScript out of the box, removing the need for additional tools like Babel or tsc for many use cases.
+
+#### 4. **Testing**
+   Bun includes built-in testing utilities, allowing developers to write and execute tests natively. This feature helps maintain the robustness of applications with minimal overhead.
+
+#### 5. **Hot Module Reload (HMR)**
+   Bun supports Hot Module Reloading for a seamless development experience. This means changes in the code are reflected in real-time without restarting the application.
+
+### Setting Up
+To get started with Bun, you can install it using the following script:
+```sh
+curl https://bun.sh/install | bash
+```
+After installation, you can start a new project with:
+
+```sh
+bun create <template> <project-name>
+cd <project-name>
+bun install
+```
+
+### Usage Example
+Here’s a simple example to illustrate the use of Bun in a JavaScript project:
+
+1. **Create a new project:**
+   ```sh
+   bun create node server-app
+   cd server-app
+   ```
+
+2. **Write a basic HTTP server:**
+   ```js
+   // server.js
+   const http = require("http");
+
+   const server = http.createServer((req, res) => {
+       res.statusCode = 200;
+       res.setHeader('Content-Type', 'text/plain');
+       res.end('Hello, World!\n');
+   });
+
+   const port = 3000;
+   server.listen(port, () => {
+       console.log(`Server running at http://localhost:${port}/`);
+   });
+   ```
+
+3. **Run the server:**
+   ```sh
+   bun server.js
+   ```
+
+### Quizzes
+
+#### Quiz 1: Runtime Features
+
+1. **What makes Bun runtime faster than other JavaScript runtimes?**
+   - A. It uses a new scripting language.
+   - B. It leverages native code and optimized compilers.
+   - C. It runs on top of Node.js.
+   
+   **Answer:** B. Bun leverages native code and optimized compilers.
+
+2. **Can Bun manage dependencies of a project?**
+   - A. Yes, it has a built-in package manager.
+   - B. No, it relies on npm for this functionality.
+   - C. Only for TypeScript projects.
+   
+   **Answer:** A. Yes, it has a built-in package manager.
+
+#### Quiz 2: Transpilation and Testing
+
+3. **Does Bun require Babel to transpile TypeScript code?**
+   - A. Yes
+   - B. No
+   - C. Only for advanced configurations
+   
+   **Answer:** B. No, Bun supports transpiling TypeScript to JavaScript out of the box.
+
+4. **Which of the following features does Bun provide for enhancing the development experience?**
+   - A. Hot Module Reloading (HMR)
+   - B. Docker support out of the box
+   - C. Cloud deployment tools
+   
+   **Answer:** A. Hot Module Reloading (HMR)
+
+#### Quiz 3: Usage and Commands
+
+5. **What is the command to create a new Bun project from a template?**
+   - A. `bun new <template> <project-name>`
+   - B. `bun init <template> <project-name>`
+   - C. `bun create <template> <project-name>`
+   
+   **Answer:** C. `bun create <template> <project-name>`
+
+6. **How do you start a HTTP server using Bun?**
+   - A. `bun start server.js`
+   - B. `bun run server.js`
+   - C. `bun server.js`
+   
+   **Answer:** C. `bun server.js`
+
+By understanding these key concepts and using the quizzes to verify your knowledge, you can effectively make use of Bun for your JavaScript projects.

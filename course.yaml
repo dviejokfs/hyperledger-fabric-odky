@@ -17,3 +17,7 @@ chapters:
             slug: showcase
             description: This lesson showcases the capabilities of the platform
             path: 01_intro/01_INTRO.mdx
+          - title: Concepts
+            slug: concepts
+            description: This lesson showcases the concepts of Bun
+            path: 01_intro/02_CONCEPTS.mdx
