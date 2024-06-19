@@ -1,3 +1,5 @@
+Below is the updated markdown, with the quizzes replaced by the `<MultipleChoiceQuiz>` components:
+
 ## Bun Runtime for JavaScript
 
 ### Introduction
@@ -68,7 +70,6 @@ Here’s a simple example to illustrate the use of Bun in a JavaScript project:
 
 ### Quizzes
 
-
 #### Quiz 1: Runtime Features
 
 <MultipleChoiceQuiz slug="runtime-features" correctAnswer={1}>
@@ -83,7 +84,6 @@ Here’s a simple example to illustrate the use of Bun in a JavaScript project:
 </MultipleChoiceQuiz>
 
 
-
 <MultipleChoiceQuiz slug="manage-dependencies" correctAnswer={0}>
 <Question> 
 **Can Bun manage dependencies of a project?**
@@ -95,38 +95,52 @@ Here’s a simple example to illustrate the use of Bun in a JavaScript project:
 
 </MultipleChoiceQuiz>
 
-
-
 #### Quiz 2: Transpilation and Testing
 
-3. **Does Bun require Babel to transpile TypeScript code?**
-   - A. Yes
-   - B. No
-   - C. Only for advanced configurations
-   
-   **Answer:** B. No, Bun supports transpiling TypeScript to JavaScript out of the box.
+<MultipleChoiceQuiz slug="transpilation-babel" correctAnswer={1}>
+<Question> 
+**Does Bun require Babel to transpile TypeScript code?**
+</Question>
 
-4. **Which of the following features does Bun provide for enhancing the development experience?**
-   - A. Hot Module Reloading (HMR)
-   - B. Docker support out of the box
-   - C. Cloud deployment tools
-   
-   **Answer:** A. Hot Module Reloading (HMR)
+<Option>A. Yes</Option>
+<Option>B. No</Option>
+<Option>C. Only for advanced configurations</Option>
+
+</MultipleChoiceQuiz>
+
+
+<MultipleChoiceQuiz slug="development-experience" correctAnswer={0}>
+<Question> 
+**Which of the following features does Bun provide for enhancing the development experience?**
+</Question>
+
+<Option>A. Hot Module Reloading (HMR)</Option>
+<Option>B. Docker support out of the box</Option>
+<Option>C. Cloud deployment tools</Option>
+
+</MultipleChoiceQuiz>
 
 #### Quiz 3: Usage and Commands
 
-5. **What is the command to create a new Bun project from a template?**
-   - A. `bun new <template> <project-name>`
-   - B. `bun init <template> <project-name>`
-   - C. `bun create <template> <project-name>`
-   
-   **Answer:** C. `bun create <template> <project-name>`
+<MultipleChoiceQuiz slug="create-project" correctAnswer={2}>
+<Question> 
+**What is the command to create a new Bun project from a template?**
+</Question>
 
-6. **How do you start a HTTP server using Bun?**
-   - A. `bun start server.js`
-   - B. `bun run server.js`
-   - C. `bun server.js`
-   
-   **Answer:** C. `bun server.js`
+<Option>A. `bun new <template> <project-name>`</Option>
+<Option>B. `bun init <template> <project-name>`</Option>
+<Option>C. `bun create <template> <project-name>`</Option>
 
-By understanding these key concepts and using the quizzes to verify your knowledge, you can effectively make use of Bun for your JavaScript projects.
+</MultipleChoiceQuiz>
+
+
+<MultipleChoiceQuiz slug="start-server" correctAnswer={2}>
+<Question> 
+**How do you start a HTTP server using Bun?**
+</Question>
+
+<Option>A. `bun start server.js`</Option>
+<Option>B. `bun run server.js`</Option>
+<Option>C. `bun server.js`</Option>
+
+</MultipleChoiceQuiz>
